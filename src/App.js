@@ -2,15 +2,15 @@ import React from 'react';
 import './style.scss';
 import Header from './Componets/header';
 import Banner from './Componets/banner';
-import Api from './Componets/api';
-import Api2 from './Componets/playbutton';
-
+import DataApi from './Componets/api copy';
+import Apx from './Componets/api';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
       <Banner/>
-      <Api/>
-      <Api2/>
+      <DataApi/>
+      {/* <Api2/> */}
       {/* <Header/> */}
      
     </>

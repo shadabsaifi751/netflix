@@ -1,93 +1,139 @@
-import React, { useState, useEffect } from "react";
-import ReactApexChart from 'react-apexcharts';
+// import { useEffect } from "react";
+import React,{useState, useEffect} from 'react';
+// import { Table } from 'reactstrap';
+const Apx = () => {
 
-
-
-const Api = () => {
-  const [users, setUsers] = useState([]);
-  const [userData, setUserData] = useState(
-    {
-          
-      series: [{
-        name: 'PRODUCT A',
-        data: [44, 55, 41, 67, 22, 43, 21, 49]
-      }, {
-        name: 'PRODUCT B',
-        data: [13, 23, 20, 8, 13, 27, 33, 12]
-      }, {
-        name: 'PRODUCT C',
-        data: [11, 17, 15, 15, 21, 14, 15, 13]
-      }],
-      options: {
-        chart: {
-          type: 'bar',
-          height: 350,
-          stacked: true,
-          stackType: '100%'
-        },
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            legend: {
-              position: 'bottom',
-              offsetX: -10,
-              offsetY: 0
-            }
-          }
-        }],
-        xaxis: {
-          categories: ['keyword', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2',
-            '2012 Q3', '2012 Q4'
-          ],
-        },
-        fill: {
-          opacity: 1
-        },
-        legend: {
-          position: 'right',
-          offsetX: 0,
-          offsetY: 50
-        },
-      },
-    
-    
-    }
-  );
+  const [data,setData] = useState([]);
 
   // useEffect(() => {
-  //   fetch("https://card-admin.dev.intuaition.net/chart/data")
-  //     .then(function (response) {
-        
-  //       return response.json();
-  //     })
-  //     .then(function (myJson) {
-  //       //  let data = JSON.stringify(myJson);
-  //       // console.log(data)
-  //       setUsers(myJson)
-  //     });
+  //   fetch('https://card-admin.dev.intuaition.net/chart/data').then(resp => resp.json())
+  //   .then(data => {
+  //     // console.log(data);
+  //     setUser(data);
+
+  //   })
+  // }, [])
+
+  // useEffect(() => {
+  //   const url = "https://card-admin.dev.intuaition.net/chart/data";
+  //   fetch(url)
+  //     .then((response) => response.json())
+  //     .then((json) => setData(json['results']))
+  //     .catch((error) => console.log(error));
   // }, []);
-  
+  useEffect(() => {
+    const url = "https://card-admin.dev.intuaition.net/chart/data";
 
-  
-  return (
-   <>
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+       console.log(json)
+      console.log('keyword==========',json.data[2].source);
+        setData(json.data)
+      } catch (error) {
+        console.log("error", error);
+      }
+    };
 
-   
-     {/* <ReactApexChart options={options} series={users.data} type="bar" height={350} /> */}
+    fetchData();
+}, []);
 
-     <ReactApexChart
-              options={userData.options}
-              series={userData.series}
-              type="bar"
-              width="500"
-            />
+  const gatdata = data.map( (item) => (
+    <div>{item.keyword}</div>
+))
+const gatSource = data.map( (item) => (
+  <>{item.source}</>
+))
 
-         {
-           console.log(users)
-         }
-   
-   </>
-  );
-};
+  return(
+    <>
+    
+   <div>
+    {gatdata}
+    {/* {gatSource} */}
+    <table
 
-export default Api;
+>
+  <thead>
+    <tr>
+      <th>
+        #
+      </th>
+      <th>
+      {gatSource[0]}
+      </th>
+      <th>
+      {gatSource[1]}
+      </th>
+      <th>
+      {gatSource[2]}
+      </th>
+      <th>
+      {gatSource[3]}
+      </th>
+      <th>
+      {gatSource[4]}
+      </th>
+      <th>
+      {gatSource[5]}
+      </th>
+     
+     
+    
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+        1
+      </th>
+      <td>
+        Mark
+      </td>
+      <td>
+        Otto
+      </td>
+      <td>
+        @mdo
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        2
+      </th>
+      <td>
+        Jacob
+      </td>
+      <td>
+        Thornton
+      </td>
+      <td>
+        @fat
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        3
+      </th>
+      <td>
+        Larry
+      </td>
+      <td>
+        the Bird
+      </td>
+      <td>
+        @twitter
+      </td>
+    </tr>
+  </tbody>
+</table>
+   </div>
+    </>
+  )
+}
+
+
+
+export default Apx;
