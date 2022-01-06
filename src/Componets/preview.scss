@@ -1,0 +1,34 @@
+.preview{
+    h3{
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 23.16px;
+    }
+    .card{
+        position: relative;
+        text-align: center;
+        h2{
+            position: absolute;
+            left: 50%;
+            bottom: -20%;
+            text-align: center;
+            transform: translate(-50%, 5%);
+        }
+    }
+    img{
+        border-radius: 50%;
+    }
+    h2.text{
+        font-family: 'Montserrat Subrayada', sans-serif;
+    }
+    .text2{
+        font-family: 'Mountains of Christmas';
+        font-size: 40px;
+    }
+    .text3{
+        font-family: 'Mouse Memoirs', sans-serif;
+    }
+    .mySwiper{
+        padding: 5px 0;
+    }
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import Button from '@mui/material/Button';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
+import CheckIcon from '@mui/icons-material/Check';
+import InfoIcon from '@mui/icons-material/Info';
 import './banner.scss';
 import logo from "../Componets/assets/Logo.png"
 
@@ -44,9 +46,10 @@ function Banner() {
             </li>
           </ul>
 
-          <ul>
+          <ul className="info">
             <li>
-              <a href="#">TV Shows</a>
+              
+              <a href="#"><CheckIcon /> <br/> My List</a>
             </li>
             <li>
             <Button variant="contained" startIcon={<PlayCircleFilledWhiteIcon />}>
@@ -54,7 +57,7 @@ function Banner() {
             </Button>
             </li>
             <li>
-              <a href="#">My List</a>
+              <a href="#"><InfoIcon /> <br/> Info</a>
             </li>
           </ul>
 
