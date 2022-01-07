@@ -10,9 +10,9 @@
         h2{
             position: absolute;
             left: 50%;
-            bottom: -20%;
+            bottom: 0;
             text-align: center;
-            transform: translate(-50%, 5%);
+            transform: translate(-50%, 0%);
         }
     }
     img{
@@ -20,13 +20,24 @@
     }
     h2.text{
         font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 18px;
+        line-height: 21.94px;
+        font-family: 400;
+        margin-bottom: 0;
     }
     .text2{
         font-family: 'Mountains of Christmas';
-        font-size: 40px;
+        font-size: 55px;
+        line-height: 76.27px;
+        font-family: 400;
+        margin-bottom: 0;
     }
     .text3{
         font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 35px;
+        line-height: 39.94px;
+        font-family: 400;
+        margin-bottom: 0;
     }
     .mySwiper{
         padding: 5px 0;

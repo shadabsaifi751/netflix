@@ -1,6 +1,5 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import img1 from './assets/Ellipse 7.png';
 import img2 from './assets/Ellipse 8.jpg';
@@ -22,7 +21,7 @@ export default function Preview() {
 
         <Swiper 
          slidesPerView={3}
-         spaceBetween={1} 
+         spaceBetween={0} 
          slidesPerGroup={1} 
          loop={true} 
          loopFillGroupWithBlank={true}
@@ -41,31 +40,23 @@ export default function Preview() {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='card'>
-                    <img src={img1} className='img-fluid' alt="" />
+                    <img src={img3} className='img-fluid' alt="" />
                     <h2 className='text3'>Desperados</h2>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='card'>
-                    <img src={img2} className='img-fluid' alt="" />
+                    <img src={img1} className='img-fluid' alt="" />
                     <h2 className='text'>Stranger things</h2>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='card'>
-                    <img src={img1} className='img-fluid' alt="" />
+                    <img src={img2} className='img-fluid' alt="" />
                     <h2 className='text2'>Dark</h2>
                 </div>
             </SwiperSlide>
         </Swiper>
-
-
-            <Box sx={{height: '100vh' }} />
-
-
-
-            
-
             
         </Container>
       </section>

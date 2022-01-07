@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 import CheckIcon from '@mui/icons-material/Check';
 import InfoIcon from '@mui/icons-material/Info';
+import { pink , red} from '@mui/material/colors';
 import './banner.scss';
 import logo from "../Componets/assets/Logo.png"
 
@@ -52,9 +53,10 @@ function Banner() {
               <a href="#"><CheckIcon /> <br/> My List</a>
             </li>
             <li>
-            <Button variant="contained" startIcon={<PlayCircleFilledWhiteIcon />}>
-              Play
+            <Button variant="contained" sx={{ color: pink[500], background:pink[100] }}   startIcon={<PlayCircleFilledWhiteIcon />}>
+            Play
             </Button>
+            
             </li>
             <li>
               <a href="#"><InfoIcon /> <br/> Info</a>

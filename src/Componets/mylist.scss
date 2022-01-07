@@ -1,0 +1,54 @@
+.myList{
+    h3{
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 23.16px;
+    }
+    .icon{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .card{
+        .card-img{
+            height: 250px;
+        }
+        img{
+            height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.12);
+            z-index: 1;
+            // &::after{
+            //     content: "";
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     height: 100%;
+            //     width: 100%;
+            //     background-color: rgba(0, 0, 0, 0.12);
+            //     z-index: -1;
+            // }
+        }
+
+
+        
+        .card-foot{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #3f3f3f;
+            height: 40px;
+            // border-bottom: 2px;
+            span .white{
+                color: #fff;
+            }
+        }
+    }
+    .css-821wyw-MuiSvgIcon-root{
+        width: 1.8em !important;
+        height: 1.8em !important;
+        color: #e91e63 !important;
+        border-radius: 50%;
+    }
+}
