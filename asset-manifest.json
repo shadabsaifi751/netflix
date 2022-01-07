@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/netflix/static/css/main.b76434e0.css",
+    "main.js": "/netflix/static/js/main.37c61352.js",
+    "static/media/banner.png": "/netflix/static/media/banner.41bdc6ef2c64c735266b.png",
+    "static/media/Movie Card (8).png": "/netflix/static/media/Movie Card (8).930e2e9b72c89da78291.png",
+    "static/media/Movie Card (13).png": "/netflix/static/media/Movie Card (13).3767f3eb26e9cfa03937.png",
+    "static/media/Movie Card (14).png": "/netflix/static/media/Movie Card (14).3d90f11ffb899a666b99.png",
+    "static/media/Movie Card.png": "/netflix/static/media/Movie Card.544eb7432440b4e74554.png",
+    "static/media/Movie Card (9).png": "/netflix/static/media/Movie Card (9).9c6c664666b6daed3c80.png",
+    "static/media/Movie Card (6).png": "/netflix/static/media/Movie Card (6).5ad6aae0adec1af85157.png",
+    "static/media/Movie Card (12).png": "/netflix/static/media/Movie Card (12).786af55ac88872f197e0.png",
+    "static/media/Rectangle 10.jpg": "/netflix/static/media/Rectangle 10.fee6b04fb4a275bb36a8.jpg",
+    "static/media/Ellipse 7.png": "/netflix/static/media/Ellipse 7.13334c031b8f40c39b96.png",
+    "static/media/Movie Card (5).png": "/netflix/static/media/Movie Card (5).0d83e60a0e61cb5a3186.png",
+    "static/media/Ellipse 10.png": "/netflix/static/media/Ellipse 10.89381192bfaeca256961.png",
+    "static/media/Movie Card (10).png": "/netflix/static/media/Movie Card (10).5a3a72bb2d2e58bf5329.png",
+    "static/media/Rectangle 10 (1).png": "/netflix/static/media/Rectangle 10 (1).59e4ac3f4225731e4aea.png",
+    "static/media/Ellipse 8.jpg": "/netflix/static/media/Ellipse 8.1687561095ec9d305d88.jpg",
+    "index.html": "/netflix/index.html",
+    "main.b76434e0.css.map": "/netflix/static/css/main.b76434e0.css.map",
+    "main.37c61352.js.map": "/netflix/static/js/main.37c61352.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b76434e0.css",
+    "static/js/main.37c61352.js"
+  ]
+}
